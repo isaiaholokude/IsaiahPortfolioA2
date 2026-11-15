@@ -1,0 +1,26 @@
+<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+      <a class="navbar-brand brand-photo me-2" href="/" aria-label="Home">
+        <img src="/images/hero.png" alt="Isaiah Olokude">
+      </a>
+      <a class="brand-name me-auto" href="/">Isaiah Olokude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link <%= currentPath === '/' ? 'active' : '' %>" href="/"><i class="fa-solid fa-house me-1"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link <%= currentPath === '/about' ? 'active' : '' %>" href="/about"><i class="fa-solid fa-user me-1"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link <%= currentPath === '/projects' ? 'active' : '' %>" href="/projects"><i class="fa-solid fa-folder-open me-1"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link <%= currentPath === '/contact' ? 'active' : '' %>" href="/contact"><i class="fa-solid fa-envelope me-1"></i> Contact</a></li>
+        </ul>
+        <div class="header-social d-none d-lg-block">
+          <a href="https://github.com/isaiaholokude" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/isaiah-olokude-8b0294298/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
