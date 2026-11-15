@@ -1,0 +1,51 @@
+<!-- POSTER: photo with handwritten notes around it -->
+<section class="about container">
+  <div class="poster">
+    <h1><span class="t-about">About</span> <span class="t-me">Me</span></h1>
+
+    <div class="poster-photo">
+      <img src="<%= media.aboutImage %>" alt="Portrait of <%= profile.name %>">
+    </div>
+    <p class="poster-name handwritten">I'm <%= profile.name.split(' ')[0] %></p>
+
+    <% aboutNotes.forEach(function (n, i) { %>
+      <button type="button" class="note note-<%= i + 1 %> handwritten"
+              data-bs-toggle="modal" data-bs-target="#note-<%= n.id %>">
+        <i class="<%= n.icon %>"></i> <%= n.title %>
+      </button>
+    <% }) %>
+
+    <p class="poster-cta handwritten">Let's work together,<br><a href="/contact">send me a message!</a></p>
+  </div>
+</section>
+
+<!-- One Bootstrap modal per note -->
+<% aboutNotes.forEach(function (n) { %>
+  <div class="modal fade note-modal" id="note-<%= n.id %>" tabindex="-1" aria-labelledby="note-<%= n.id %>-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <h2 class="modal-title fs-5" id="note-<%= n.id %>-title"><i class="<%= n.icon %> text-accent me-2"></i><%= n.title %></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"><p class="mb-0"><%= n.text %></p></div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-pill" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<% }) %>
+
+<!-- INTRO VIDEO -->
+<section class="about-video container">
+  <h2 class="section-title mb-4">Meet Me in 60 Seconds</h2>
+  <% if (media.video) { %>
+    <video controls preload="metadata" <% if (media.videoPoster) { %>poster="<%= media.videoPoster %>"<% } %>>
+      <source src="<%= media.video %>" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  <% } else { %>
+    <p class="text-secondary"><i class="fa-solid fa-circle-play fa-2x d-block mb-2"></i>Intro video coming soon</p>
+  <% } %>
+</section>
