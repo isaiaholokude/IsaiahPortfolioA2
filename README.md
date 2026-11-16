@@ -5,6 +5,7 @@ This is my portfolio from Assignment 1, rebuilt as an Express app with EJS templ
 
 Live site: https://isaiahportfolioa2.onrender.com           
 Repository: https://github.com/isaiaholokude/IsaiahPortfolioA2
+video link : https://go.screenpal.com/watch/cOXDeBn4TJx 
 
 
 PAGES
