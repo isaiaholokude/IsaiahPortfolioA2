@@ -3,7 +3,7 @@ ISAIAH'S PORTFOLIO (INFR3120 ASSIGNMENT 2)
 
 This is my portfolio from Assignment 1, rebuilt as an Express app with EJS templates. It's hosted on Render.
 
-Live site: https://YOUR-APP-NAME.onrender.com
+Live site: https://isaiahportfolioa2.onrender.com           
 Repository: https://github.com/isaiaholokude/IsaiahPortfolioA2
 
 
@@ -57,7 +57,7 @@ On Render I made a new Web Service from this repo. Build command is npm install,
 
 AI USE
 ------
-I used Claude (an AI assistant from Anthropic) to help with this assignment. It helped me plan the project structure, write and debug a lot of the code and styling, and move my Assignment 1 content into EJS. I went through each stage myself, tested it, and made the changes I wanted before committing.
+I used Claude to help with this assignment. It helped me debug a lot of the code and styling, and move my some Assignment 1 content into EJS. 
 
 
 CREDITS AND SOURCES
@@ -71,3 +71,4 @@ CREDITS AND SOURCES
   - Fonts: Poppins, Caveat and Playfair Display from Google Fonts (https://fonts.google.com)
   - Render, Deploy a Node Express App: https://render.com/docs/deploy-node-express-app
   - The photos and the intro video are mine.
+  - Code from the lectures.
