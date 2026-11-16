@@ -1,11 +1,13 @@
-<article class="white-card project-card h-100">
+<div class="project-row">
   <span class="project-icon"><i class="<%= p.icon %>"></i></span>
-  <h2><%= p.title %></h2>
-  <p class="project-tag"><%= p.category %></p>
-  <p class="small"><%= p.description %></p>
   <div>
-    <% p.tags.forEach(function (t) { %>
-      <span class="badge"><%= t %></span>
-    <% }) %>
+    <p class="project-tag"><%= p.category %></p>
+    <h2><%= p.title %></h2>
+    <p class="small"><%= p.description %></p>
+    <div>
+      <% p.tags.forEach(function (t) { %>
+        <span class="badge"><%= t %></span>
+      <% }) %>
+    </div>
   </div>
-</article>
+</div>

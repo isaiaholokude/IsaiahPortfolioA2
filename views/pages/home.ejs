@@ -1,23 +1,21 @@
 <section class="hero container">
-  <div class="hero-card">
-    <div class="row align-items-center g-4">
-      <div class="col-md-4">
-        <div class="hero-blob">
-          <img src="<%= media.heroImage %>" alt="<%= profile.name %> at a desk">
-        </div>
+  <div class="row align-items-center g-4">
+    <div class="col-md-4">
+      <div class="hero-photo">
+        <img src="<%= media.heroImage %>" alt="<%= profile.name %> at a desk">
       </div>
-      <div class="col-md-8">
-        <h1>Hi, I'm <%= profile.name %>.</h1>
-        <p class="hero-role mb-3"><%= profile.role %></p>
-        <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i><a class="hero-link" href="mailto:<%= profile.email %>"><%= profile.email %></a></p>
-        <p class="mb-3"><i class="fa-solid fa-location-dot me-2"></i><%= profile.location %></p>
-        <div class="mb-3">
-          <a href="<%= profile.github %>" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="<%= profile.linkedin %>" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-        <p><%= profile.summary %></p>
-        <a href="/about" class="learn-more">Learn more about me here <i class="fa-solid fa-arrow-right ms-1"></i></a>
+    </div>
+    <div class="col-md-8">
+      <h1>Hi, I'm <%= profile.name %>.</h1>
+      <p class="hero-role mb-3"><%= profile.role %></p>
+      <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i><a href="mailto:<%= profile.email %>"><%= profile.email %></a></p>
+      <p class="mb-3"><i class="fa-solid fa-location-dot me-2 text-muted"></i><%= profile.location %></p>
+      <div class="mb-3">
+        <a href="<%= profile.github %>" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="<%= profile.linkedin %>" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
+      <p><%= profile.summary %></p>
+      <a href="/about" class="learn-more">Learn more about me here <i class="fa-solid fa-arrow-right ms-1"></i></a>
     </div>
   </div>
 </section>

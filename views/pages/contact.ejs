@@ -1,9 +1,8 @@
 <section class="contact container">
-  <div class="contact-panel">
   <h1 class="section-title">Contact Me</h1>
   <p class="section-intro">Send me your questions, comments and project-related queries.</p>
 
-  <div class="mx-auto" style="max-width: 600px;">
+  <div class="mx-auto" style="max-width: 560px;">
     <% if (sent) { %>
       <div class="alert alert-success d-flex align-items-center" role="alert">
         <i class="fa-solid fa-circle-check fa-lg me-2"></i>
@@ -21,7 +20,7 @@
   </div>
 
   <!-- Contact form (POST /contact) -->
-  <form action="/contact" method="POST" class="contact-form white-card needs-validation" novalidate>
+  <form action="/contact" method="POST" class="contact-form needs-validation" novalidate>
     <div class="mb-3">
       <label for="name" class="form-label">Your Name</label>
       <div class="input-group has-validation">
@@ -55,7 +54,7 @@
                 required minlength="10" maxlength="500"><%= form.message || '' %></textarea>
       <div class="invalid-feedback">Your message should be at least 10 characters.</div>
     </div>
-    <div class="mb-1">
+    <div class="mb-3">
       <label for="robot" class="form-label">What is 1 + 1? (So I know you aren't a robot)</label>
       <div class="input-group has-validation">
         <span class="input-group-text"><i class="fa-solid fa-robot"></i></span>
@@ -66,5 +65,4 @@
     </div>
     <button type="submit" class="btn btn-accent"><i class="fa-solid fa-paper-plane me-1"></i> Submit</button>
   </form>
-  </div>
 </section>

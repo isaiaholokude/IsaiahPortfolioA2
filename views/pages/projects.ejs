@@ -1,14 +1,10 @@
 <section class="projects container">
-  <div class="dark-panel">
-    <h1 class="section-title">My Projects</h1>
-    <p class="section-intro">Labs, assignments and real work I have done so far. Each one taught me something I use in the next.</p>
+  <h1 class="section-title">My Projects</h1>
+  <p class="section-intro">Labs, assignments and real work I have done so far. Each one taught me something I use in the next.</p>
 
-    <div class="row g-4 justify-content-center">
-      <% projects.forEach(function (p) { %>
-        <div class="col-md-6 col-lg-4">
-          <%- include('../partials/project-card', { p: p }) %>
-        </div>
-      <% }) %>
-    </div>
+  <div class="project-list">
+    <% projects.forEach(function (p) { %>
+      <%- include('../partials/project-card', { p: p }) %>
+    <% }) %>
   </div>
 </section>
